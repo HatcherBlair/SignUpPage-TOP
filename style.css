@@ -1,0 +1,7 @@
+form {
+    display: flex;
+}
+
+.form-container {
+    background-color: lightgray;
+}
