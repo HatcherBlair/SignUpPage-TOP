@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="image-side">
+        <p class="logo-text">Skiing International</p>
         <p>Photo credit to Slava Auchynnikau</p>
     </div>
     <div class="form-side">
@@ -25,35 +26,39 @@
             <form action="*" method="post">
                 <div class="column">
                     <div class="first-name-conatiner">
-                        <label for="first-name">FIRST NAME</label><br>
-                        <input type="text" id="first-name" name="first-name" placeholder="John">
+                        <label for="first-name">*FIRST NAME</label><br>
+                        <input type="text" id="first-name" name="first-name" placeholder="John" required>
                     </div>
                     <div class="last-name-container">
-                        <label for="last-name">LAST NAME</label><br>
-                        <input type="text" id="last-name" name="last-name" placeholder="Doe"><br>
+                        <label for="last-name">*LAST NAME</label><br>
+                        <input type="text" id="last-name" name="last-name" placeholder="Doe" required><br>
                     </div>
                 </div>
                 <div class="column">
                     <div class="email-container">
-                        <label for="email">EMAIL</label><br>
-                        <input type="email" id="email" name="email" placeholder="example@example.com">
+                        <label for="email">*EMAIL</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
                     </div>
                     <div class="number-conatiner">
-                        <label for="phone-number">PHONE NUMBER</label><br>
-                        <input type="text" id="phone-number" name="phone-number" placeholder="(111) 000-0000">
+                        <label for="phone-number">*PHONE NUMBER</label><br>
+                        <input type="tel" id="phone-number" name="phone-number" placeholder="(111) 000-0000" 
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="12" required>
                     </div>
                 </div>
                 <div class="column">
                     <div class="password-container">
-                        <label for="password">PASSWORD</label><br>
-                        <input type="password" id="password" name="password">
+                        <label for="password">*PASSWORD</label><br>
+                        <input type="password" id="password" name="password" required>
                     </div>
                     <div class="confirm-password-container">
-                        <label for="confirm-password">CONFIRM PASSWORD</label><br>
-                        <input type="password" id="confirm-password" name="confirm-password">
+                        <label for="confirm-password">*CONFIRM PASSWORD</label><br>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
                     </div>
                 </div>
+                <img class="form-image" src="./images/SkiResort.jpg" alt="Ski Resort">
+                <p class="legend"> * required</p>
                 <button type="submit">Create Account</button>
+                
             </form>
         </div>
         <p>Already have an account? <a href="*">Log in</a></p>

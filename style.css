@@ -16,20 +16,32 @@ body {
     aspect-ratio: calc(2739/4109);
 
     font-weight: 800;
-    font-size: 64px;
+    font-size: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.logo-text {
+    font-size: 58px;
+    padding: 1rem;
+}
+
 
 .form-side {
     max-width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: lightgray;
+    padding: 2rem;
 }
 
 .form-container {
-    margin: 2rem;
     padding: 2rem;
     background-color: rgb(45.1, 47.3, 57.2);
+    position: relative;
 }
 
 form {
@@ -39,7 +51,7 @@ form {
 
 .column {
     display: flex;
-    padding: 1rem;
+    padding-top: 1rem;
     justify-content: space-between;
     max-width: 45%;
 }
@@ -47,4 +59,50 @@ form {
 button {
     width: 10rem;
     height: 5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #2176B4;
+}
+
+.form-header {
+    font-size: 32px;
+}
+
+.call-to-action {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+a {
+    color: #2176B4;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #5F21B5;
+    text-decoration: none;
+}
+
+.legend {
+    font-size: 8px;
+}
+
+.form-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 50%;
+    height: 100%;
+}
+
+input{
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid lightskyblue;
+    box-shadow: 1px 1px 1px 1px darkgray;
 }
